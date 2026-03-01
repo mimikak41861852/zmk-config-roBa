@@ -53,6 +53,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        layer6 {
+            bindings = <&mo 6>;
+            key-positions = <21 42>;
+        };
     };
 
     macros {
@@ -89,10 +94,10 @@
 
         FUNCTION {
             bindings = <
-&trans         &trans     &kp EQUAL   &kp ASTERISK  &kp TILDE                          &trans    &kp UNDER  &trans                &trans                 &kp PLUS
-&kp AMPERSAND  &kp SLASH  &kp DOLLAR  &trans        &trans     &kp ESCAPE      &trans  &kp HASH  &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS
-&trans         &kp EXCL   &kp CARET   &trans        &trans     &trans          &trans  &trans    &kp AT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans         &trans     &trans      &trans        &trans     &trans          &trans  &trans                                                            &trans
+&trans         &trans     &kp EQUAL   &kp ASTERISK  &kp TILDE                              &trans       &kp UNDER  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS
+&kp AMPERSAND  &kp SLASH  &kp DOLLAR  &trans        &trans     &kp ESCAPE      &trans      &kp HASH     &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS
+&trans         &kp EXCL   &kp CARET   &trans        &trans     &trans          &trans      &kp PERCENT  &kp AT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans         &trans     &trans      &trans        &trans     &trans          &kp DELETE  &trans                                                               &trans
             >;
         };
 
@@ -125,10 +130,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &trans
-&trans  &trans  &trans  &trans  &trans  &kp ESCAPE      &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans         &trans    &trans        &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans                              &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &kp ESCAPE      &trans      &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans      &trans         &trans    &trans        &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &kp DELETE  &trans                                            &trans
             >;
         };
 
